@@ -9,7 +9,10 @@ export default function LayeredText({
           <div
             key={i}
             className="relative inline-block"
-            style={{ height: `${size * 3}rem` }}
+            style={{
+                 height: `${size * 3}rem`,
+                 filter: `drop-shadow(0 0 10px ${color}80) drop-shadow(0 0 20px ${color}50) drop-shadow(0 0 30px ${color}40)`
+            }}
           >
             {/* invisible measure span to size the wrapper to the serif-glyph’s natural width */}
             <span
